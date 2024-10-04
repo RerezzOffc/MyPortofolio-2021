@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.game{
+    width: 640px;
+    height: 230px;
+    border: 1px solid #000000;
+    margin: auto;
+}
+#dino{
+    width: 80px;
+    height: 90px;
+    background-image: url(t-rex.png);
+    background-size: auto 90px;
+    position: relative;
+    top: 143px;
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0% {
+        top: 143px;
+    }
+    30% {
+        top: 115px;
+    }
+    50% {
+        top: 70px;
+    }
+    80% {
+        top: 115px;
+    }
+    100% {
+        top: 143px;
+    }
+}
+#cactus {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 91px;
+    left: 580px;
+    background-image: url(hafiz.png);
+    background-size: 65px 50px;
+    animation: cactus-block 1.2s infinite linear;
+}
+@keyframes cactus-block {
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.text1{
+    font-size: 15px;
+    color: chocolate;
+}

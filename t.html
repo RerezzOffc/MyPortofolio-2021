@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d6e78495c8.js" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="toggle"> <!--Untuk latar belakang-->    <div class="circle"></div> <!--Icon lingkaran-->    <div class="toggle-moon"><i class="fas fa-moon"></i></div> <!--Icon bulan-->    <div class="toggle-sun"><i class="fas fa-sun"></i></div> <!--Icon matahari--></div>
+
+    <style>
+        html {      transition: 0.4s;       /*Agar transisi pergantian dark mode smooth*/}.dark-mode {                /*Style dark mode*/    background: #2a2a39;    color: white;}.toggle {    width: 45px;    height: 25px;    border-radius: 30px;    font-size: 16px;    display: flex;    text-align: center;    align-items: center;    cursor: pointer;    background: black;    color: white;}.circle {    width: 20px;    height: 20px;    transform: translateX(2px);    border-radius: 30px;    transition: 0.4s;    position: absolute;    background: white;}.dark-mode .circle {    transform: translateX(23px)}.toggle-moon, .toggle-sun {    width: 50%;}
+        .dark-mode (selector) {	property: value;}/*Contohnya*/.dark-mode .circle {    transform: translateX(23px)}
+        var html = $("html")$(function darkmode() {    $(".toggle").click(function() {        if (html.hasClass("dark-mode")) {            html.removeClass("dark-mode");            // mengatur local storage dengan value "false" :            localStorage.setItem("dark-mode", false);        }        else {            html.addClass("dark-mode");            // mengatur local storage dengan value "true" :            localSotrage.setItem("dark-mode", true);        }    })})        // Fungsi jika local storage memiliki key "dark-mode" dengan value "true" :if (localStorage.getItem("dark-mode") == "true") {	$(" html").addClass("dark-mode");}
+    </style>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Judul Game</title>
+    <style>
+html,body { margin: 0;overflow: hidden;}
+canvas{ padding: 0; margin: auto; display: block; width:100%;}
+#gameArea {width:80%; position:absolute;}
+#game {margin:50px;}
+	</style>
+ 	<script type="text/javascript" src="https://wandah.org/js/gameLib.js"></script>       
+</head>
+<body>
+	<button><a href="http://127.0.0.1:5500/index.html">Keluar</a></button>
+	<audio autoplay>
+		<source src="assets/soundawal.mp3" type="audio/mpeg" id="music">
+		Browsermu tidak mendukung tag audio, upgrade donk!
+	</audio>
+<div id="game">
+	<div id="gameArea"><canvas id="canvas"></canvas></div>
+</div>
+</body>
+<script type="text/javascript" src="js/map_3.js"></script>
+<script type="text/javascript" src="js/map_level2.js"></script>
+<script type="text/javascript" src="js/map_3.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</html>
